@@ -213,6 +213,12 @@ a {
     background: rgb(198,70,14);
     background: linear-gradient(180deg, rgba(198,70,14,1) 9%, rgba(232,178,151,1) 100%);
 }
+.linear-gradient{
+    height: 100vh;
+    background: rgb(198,70,14);
+    background: linear-gradient(0deg, rgba(198,70,14,1) 9%, rgba(0,74,98,1) 100%);
+    position: relative;
+}
 
 /* Cards */
 
@@ -313,4 +319,37 @@ a {
 .cards i{
     font-size: 20rem;
     margin-top: 5rem;
+}
+
+
+
+
+
+.cursor{
+    position: fixed;
+    top: 0;
+    left: 0;
+    transform: translate(-50%,-50%);
+    border-radius: 50%;
+    z-index: 9999;
+    pointer-events: none;
+    width: 15px;
+    height: 15px;
+    background-color:#fff;
+    mix-blend-mode: difference;
+    transition: all .2s ease-out;
+}
+
+::selection {
+    color: rgba(82, 179, 214, 0.838);
+    background: #E8B297;
+}
+
+::-webkit-scrollbar {
+    width: 0px;
+}
+
+::-webkit-scrollbar-track {
+    background: transparent;
+    border-radius: 0px;
 }
